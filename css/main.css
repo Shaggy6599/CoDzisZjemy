@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-block {
+  background-image: url(https://as2.ftcdn.net/v2/jpg/02/65/58/29/1000_F_265582946_D57tH8k6p377flQrhptz93w9bK9CN6AR.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.main-block__wrapper {
+  width: 80vw;
+  position: relative;
+}
+.main-block__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 7%;
+  margin: 7% 0;
+  border-radius: 1em;
+  opacity: 0.9;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main-block__button:nth-child(1) {
+  background-color: #ffbe0b;
+}
+.main-block__button:nth-child(2) {
+  background-color: #fb5607;
+}
+.main-block__button:nth-child(3) {
+  background-color: #ff006e;
+}
+.main-block__button:nth-child(4) {
+  background-color: #3a86ff;
+}
+.main-block__button--active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin: 0;
+  align-items: flex-start;
+}
+.main-block__text {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Metrophobic", sans-serif;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer__info {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Metrophobic", sans-serif;
+}/*# sourceMappingURL=main.css.map */
