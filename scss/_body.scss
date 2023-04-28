@@ -1,3 +1,5 @@
+/*
+*/
 .main-block {
   background-image: url(https://as2.ftcdn.net/v2/jpg/02/65/58/29/1000_F_265582946_D57tH8k6p377flQrhptz93w9bK9CN6AR.jpg);
   background-repeat: no-repeat;
@@ -8,12 +10,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 0 auto;
 
-  width: 100vw;
-  height: 100vh;
+  width: 412px;
+  height: 915px;
 
   &__wrapper {
-    width: 80vw;
+    width: 80%;
+    height: auto;
     position: relative;
   }
   &__button {
@@ -26,6 +30,8 @@
     border-radius: 1em;
     opacity: 0.9;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    user-select: none;
+    cursor: pointer;
 
     &:nth-child(1) {
       background-color: $bg-color-1;
@@ -52,14 +58,58 @@
       margin: 0;
       align-items: flex-start;
     }
+    &-result{
+      display: none;
+    }
+    &-result--true{
+      display: block;
+    }
+    &-text {
+      font-size: 20px;
+      color: $font-main-color;
+      font-family: "Metrophobic", sans-serif;
+    }
+    &-img{
+      width: 150px;
+      height: 0;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      
+    }
+    &-img--active{
+      height: 150px;
+      margin: 5% 0;
+      opacity: 1;
+    }
+    
+    &:active{
+      box-shadow: inset 0 0 6px 2px #e5e5e5;
+    }
 
   }
-
-  &__text {
-    font-size: 20px;
-    color: $font-main-color;
-    font-family: "Metrophobic", sans-serif;
+  &__draw{
+    width: 100px;
+    height: 0;
+    overflow: hidden;
+    background-color: #a1a1ff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 2px #e5e5e5;
+    transition: all 0.4s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+    
+    &--open{
+      height: 50px;
+      position: absolute;
+      top: 400px;
+      left: 0;
+    }
   }
+
 }
 .footer {
   position: absolute;
@@ -72,3 +122,80 @@
     font-family: "Metrophobic", sans-serif;
   }
 }
+
+
+
+/*                          */
+/*
+.button{
+  width: 200px;
+  height: 50px;
+  background-color: #a1a1ff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 2px #e5e5e5;
+  transition: all 0.4s ease-in-out;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  cursor: pointer;
+  
+}
+.button--active{
+  height: 200px;
+  padding: 5% 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-result{
+  display: none;
+}
+.button-result--true{
+  display: block;
+}
+.button:hover{
+  scale: 1.05;
+  box-shadow: 2px 2px 8px 3px #f5f5f5;
+}
+.button:active{
+  box-shadow: inset 0 0 6px 2px #e5e5e5;
+}
+.draw{
+  width: 100px;
+  height: 0;
+  overflow: hidden;
+  background-color: #a1a1ff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 2px #e5e5e5;
+  transition: all 0.4s ease-in-out;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.button-img{
+  width: 150px;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  
+}
+.button-img--active{
+  height: 150px;
+  margin: 5% 0;
+  opacity: 1;
+}
+.draw--open{
+  height: 50px;
+}
+*/
