@@ -47,9 +47,11 @@ var img = document.querySelector(".js-button-img");
 var element = document.querySelector(".js-button");
 var imgSrc = document.querySelector(".js-img");
 var btns = document.querySelectorAll('.js-button');
-var getDishData = event.target.getAttribute('data-value');
+
 btns.forEach( (el) => {
 el.addEventListener('click', () => {
+let getDishData = event.target.getAttribute('data-value');
+    
     switch (getDishData) {
       case '1': console.log(getDishData); break;
       case '2': console.log(getDishData); break;     
