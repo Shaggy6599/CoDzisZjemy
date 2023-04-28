@@ -46,6 +46,13 @@ var draw = document.querySelector(".js-draw");
 var img = document.querySelector(".js-button-img");
 var element = document.querySelector(".js-button");
 var imgSrc = document.querySelector(".js-img");
+var btns = document.querySelectorAll('.js-button');
+
+btns.forEach( (el) => {
+el.addEventListener('click', () => {
+console.log("It works");
+})
+})
 
 element.addEventListener('click', () => {
   if (!isOpen) {
