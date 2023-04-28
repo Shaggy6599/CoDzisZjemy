@@ -16,10 +16,7 @@
   height: 915px;
 }
 .main-block__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
+  padding-top: 50%;
   margin: auto;
   width: 80%;
   height: -moz-min-content;
@@ -32,7 +29,7 @@
   align-items: center;
   flex-direction: column;
   padding: 7%;
-  margin: 7% auto;
+  margin: 2% 0;
   border-radius: 1em;
   opacity: 0.9;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
