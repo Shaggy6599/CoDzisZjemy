@@ -75,11 +75,13 @@ var img = document.querySelector(".js-button-img");
 var element = document.querySelector(".js-button");
 var imgSrc = document.querySelector(".js-img");
 var btns = document.querySelectorAll('.js-button');
+var dishData = null;
+
 
 btns.forEach( (el) => {
 el.addEventListener('click', () => {
 let dataValue = event.target.getAttribute('data-value');
-let dishData = null;
+
     switch (dataValue) {
       case '1': dishData = "breakfast"; break;
       case '2': dishData = "dinner"; break;     
