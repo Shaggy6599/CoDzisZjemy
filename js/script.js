@@ -100,9 +100,9 @@ element.addEventListener('click', () => {
     draw.classList.add("main-block__draw--open")
     isOpen = true;
 
-    const rand = Math.floor(Math.random() * breakfast.length);
-    result.innerHTML = (breakfast[rand].name);
-    imgSrc.src = (breakfast[rand].img);
+    const rand = Math.floor(Math.random() * dishData.length);
+    result.innerHTML = (dishData[rand].name);
+    imgSrc.src = (dishData[rand].img);
 
   } else {
     element.classList.remove("main-block__button--active");
