@@ -87,7 +87,7 @@ let dishData = null;
       case '4': dishData = "fastFood"; break;    
     };    
     
- console.log("dishData")
+ console.log(dishData)
 })
 })
 
