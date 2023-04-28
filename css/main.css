@@ -54,12 +54,13 @@
   background-color: #3a86ff;
 }
 .main-block__button--active {
-  height: 100%;
-  width: 200px;
   opacity: 1;
 }
 .main-block__button-result {
   display: none;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Metrophobic", sans-serif;
 }
 .main-block__button-result--true {
   display: block;
@@ -81,23 +82,24 @@
 }
 .main-block__button-img--active {
   height: 150px;
-  margin: 5% 0;
+  margin: 15% 0;
   opacity: 1;
 }
 .main-block__button:active {
   box-shadow: inset 0 0 6px 2px #e5e5e5;
 }
 .main-block__draw {
-  width: 80%;
-  height: 0;
-  overflow: hidden;
-  background-color: #a1a1ff;
-  border-radius: 10px;
-  transition: all 0.4s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
+  width: 50px;
+    height: 0;
+    overflow: hidden;
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 20%, rgba(0,0,0,0) 30%);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+  position: relative;
+  top: -55px;
+  right: -105px;
 }
 .main-block__draw--open {
   height: 50px;
