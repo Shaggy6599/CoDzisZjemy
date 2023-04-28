@@ -86,7 +86,8 @@
   opacity: 1;
 }
 .main-block__button:active {
-  box-shadow: inset 0 0 6px 2px #e5e5e5;
+  opacity: 0.8;
+  transition: 0.2s cubic-bezier(.5,0,1,.5);
 }
 .main-block__draw {
   width: 50px;
