@@ -82,7 +82,7 @@ element.addEventListener('click', () => {
 window.addEventListener('click', (e) => {
 
 
-  if (e.target !== element && e.target !== draw && e.target !== text) {
+  if (e.target !== element && e.target !== draw) {
     element.classList.remove("main-block__button--active");
     img.classList.remove("main-block__button-img--active");
     result.classList.remove("main-block__button-result--true");
