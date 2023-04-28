@@ -54,10 +54,10 @@ let dataValue = event.target.getAttribute('data-value');
 
 
     switch (dataValue) {
-      case '1': console.log("Click 1");
-      case '2': console.log("Click 2");      
-      case '3': console.log("Click 3");
-      case '4': console.log("Click 4");     
+      case '1': console.log("Click 1"); break;
+      case '2': console.log("Click 2"); break;     
+      case '3': console.log("Click 3"); break;
+      case '4': console.log("Click 4"); break;    
     }
  
 })
