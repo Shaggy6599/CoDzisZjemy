@@ -47,7 +47,7 @@ var img = document.querySelector(".js-button-img");
 var element = document.querySelector(".js-button");
 var imgSrc = document.querySelector(".js-img");
 
-element.addEventListener('click', () => {
+element && text.addEventListener('click', () => {
 
 
   if (!isOpen) {
