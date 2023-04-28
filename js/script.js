@@ -40,6 +40,34 @@ const dishes = [{
   },
 ];
 
+const breakfast = [{
+    type: 'breakfast',
+    name: 'Bułeczki z szynką',
+    img: '',
+},
+                    {
+    type: 'breakfast',
+    name: 'Owsianka',
+    img: '',
+},
+                   {
+    type: 'breakfast',
+    name: 'Pancakes',
+    img: '',
+},
+                   {
+    type: 'breakfast',
+    name: 'Jajecznica',
+    img: '',
+},
+                   {
+    type: 'breakfast',
+    name: 'Sałatka cezar',
+    img: '',
+},
+                   
+                  ]
+
 var isOpen = false;
 var result = document.querySelector(".js-button-result");
 var draw = document.querySelector(".js-draw");
@@ -71,9 +99,9 @@ element.addEventListener('click', () => {
     draw.classList.add("main-block__draw--open")
     isOpen = true;
 
-    const rand = Math.floor(Math.random() * dishes.length);
-    result.innerHTML = (dishes[rand].name);
-    imgSrc.src = (dishes[rand].img);
+    const rand = Math.floor(Math.random() * breakfast.length);
+    result.innerHTML = (breakfast[rand].name);
+    imgSrc.src = (breakfast[rand].img);
 
   } else {
     element.classList.remove("main-block__button--active");
