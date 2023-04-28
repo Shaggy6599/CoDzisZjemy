@@ -74,7 +74,8 @@ let dataValue = event.target.getAttribute('data-value');
                 isOpen = false;
 
               }
-            }) break;     
+            });
+            break;     
       case '3': console.log("Click 3"); break;
       case '4': console.log("Click 4"); break;    
     }
