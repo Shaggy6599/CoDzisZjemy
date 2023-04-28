@@ -46,6 +46,7 @@ var draw = document.querySelector(".js-draw");
 var img = document.querySelector(".js-button-img");
 var element = document.querySelector(".js-button");
 var imgSrc = document.querySelector(".js-img");
+var text = document.querySelector(".js-text");
 
 element && text.addEventListener('click', () => {
 
