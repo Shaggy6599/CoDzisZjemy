@@ -79,7 +79,8 @@ var btns = document.querySelectorAll('.js-button');
 btns.forEach( (el) => {
 el.addEventListener('click', () => {
 let dataValue = event.target.getAttribute('data-value');
-let dishData = switch (dataValue) {
+let dishData = null;
+    switch (dataValue) {
       case '1': dishData = "breakfast"; break;
       case '2': dishData = "dinner"; break;     
       case '3': dishData = "dessert"; break;
