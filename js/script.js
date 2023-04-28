@@ -50,12 +50,7 @@ var btns = document.querySelectorAll('.js-button');
 
 btns.forEach( (el) => {
 el.addEventListener('click', () => {
-console.log("It works");
-})
-})
-
-element.addEventListener('click', () => {
-  if (!isOpen) {
+if (!isOpen) {
     element.classList.add("main-block__button--active");
     img.classList.add("main-block__button-img--active");
     result.classList.add("main-block__button-result--true");
@@ -74,6 +69,11 @@ element.addEventListener('click', () => {
     isOpen = false;
 
   }
+})
+})
+
+element.addEventListener('click', () => {
+  
 
 
 })
