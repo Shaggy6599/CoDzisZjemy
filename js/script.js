@@ -53,10 +53,10 @@ el.addEventListener('click', () => {
 let getDishData = event.target.getAttribute('data-value');
     
     switch (getDishData) {
-      case '1': console.log(getDishData); break;
-      case '2': console.log(getDishData); break;     
-      case '3': console.log(getDishData); break;
-      case '4': console.log(getDishData); break;    
+      case '1': console.log("breakfast"); break;
+      case '2': console.log("dinner"); break;     
+      case '3': console.log("dessert"); break;
+      case '4': console.log("fastFood"); break;    
     }
  
 })
