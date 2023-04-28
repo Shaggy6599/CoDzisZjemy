@@ -55,7 +55,26 @@ let dataValue = event.target.getAttribute('data-value');
 
     switch (dataValue) {
       case '1': console.log("Click 1"); break;
-      case '2': console.log("Click 2"); break;     
+      case '2': if (!isOpen) {
+                element.classList.add("main-block__button--active");
+                img.classList.add("main-block__button-img--active");
+                result.classList.add("main-block__button-result--true");
+                draw.classList.add("main-block__draw--open")
+                isOpen = true;
+
+                const rand = Math.floor(Math.random() * dishes.length);
+                result.innerHTML = (dishes[rand].name);
+                imgSrc.src = (dishes[rand].img);
+
+              } else {
+                element.classList.remove("main-block__button--active");
+                img.classList.remove("main-block__button-img--active");
+                result.classList.remove("main-block__button-result--true");
+                draw.classList.remove("main-block__draw--open")
+                isOpen = false;
+
+              }
+            }) break;     
       case '3': console.log("Click 3"); break;
       case '4': console.log("Click 4"); break;    
     }
