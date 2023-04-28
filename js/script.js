@@ -84,7 +84,7 @@ element.addEventListener('click', () => {
     isOpen = false;
 
   }
-    )}
+})
     
 window.addEventListener('click', (e) => {
 
