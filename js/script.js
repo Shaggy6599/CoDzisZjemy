@@ -50,6 +50,20 @@ var btns = document.querySelectorAll('.js-button');
 
 btns.forEach( (el) => {
 el.addEventListener('click', () => {
+let dataValue = event.target.getAttribute('data-value');
+
+
+    switch (dataValue) {
+      case '1': console.log("Click 1");
+      case '2': console.log("Click 2");      
+      case '3': console.log("Click 3");
+      case '4': console.log("Click 4");     
+    }
+ 
+})
+})
+
+element.addEventListener('click', () => {
 
   if (!isOpen) {
     element.classList.add("main-block__button--active");
@@ -70,15 +84,7 @@ el.addEventListener('click', () => {
     isOpen = false;
 
   }
-
-
-
-
-    console.log("Click");
-})
-})
-
-
+    
 window.addEventListener('click', (e) => {
 
 
