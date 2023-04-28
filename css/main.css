@@ -53,6 +53,18 @@
 .main-block__button:nth-child(4) {
   background-color: #3a86ff;
 }
+.main-block__button:nth-child(5) {
+  background-color: #ffbe0b;
+}
+.main-block__button:nth-child(6) {
+  background-color: #fb5607;
+}
+.main-block__button:nth-child(7) {
+  background-color: #ff006e;
+}
+.main-block__button:nth-child(8) {
+  background-color: #3a86ff;
+}
 .main-block__button--active {
   opacity: 1;
 }
