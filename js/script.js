@@ -50,7 +50,7 @@ var btns = document.querySelectorAll('.js-button');
 
 btns.forEach( (el) => {
 el.addEventListener('click', () => {
-element.addEventListener('click', () => {
+
   if (!isOpen) {
     element.classList.add("main-block__button--active");
     img.classList.add("main-block__button-img--active");
@@ -72,6 +72,10 @@ element.addEventListener('click', () => {
   }
 
 
+
+
+    console.log("Click");
+})
 })
 
 
@@ -96,10 +100,6 @@ draw.addEventListener('click', () => {
     result.innerHTML = (dishes[rand].name);
     imgSrc.src = (dishes[rand].img);
   }
-})
-
-    console.log("Click");
-})
 })
 
 
