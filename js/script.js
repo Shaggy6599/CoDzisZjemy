@@ -54,7 +54,7 @@ element.addEventListener('click', () => {
     element.classList.add("main-block__button--active");
     img.classList.add("main-block__button-img--active");
     result.classList.add("main-block__button-result--true");
-    draw.classList.add("draw--open")
+    draw.classList.add("main-block__draw--open")
     isOpen = true;
 
     const rand = Math.floor(Math.random() * dishes.length);
@@ -65,7 +65,7 @@ element.addEventListener('click', () => {
     element.classList.remove("main-block__button--active");
     img.classList.remove("main-block__button-img--active");
     result.classList.remove("main-block__button-result--true");
-    draw.classList.remove("draw--open")
+    draw.classList.remove("main-block__draw--open")
     isOpen = false;
 
   }
@@ -79,7 +79,7 @@ window.addEventListener('click', (e) => {
     element.classList.remove("main-block__button--active");
     img.classList.remove("main-block__button-img--active");
     result.classList.remove("main-block__button-result--true");
-    draw.classList.remove("draw--open")
+    draw.classList.remove("main-block__draw--open")
     isOpen = false;
 
   }

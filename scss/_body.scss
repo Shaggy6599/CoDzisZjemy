@@ -5,19 +5,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: 0 auto;
-
+  margin: auto auto;
   width: 412px;
   height: 915px;
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
     width: 80%;
-    height: auto;
+    height: min-content;
+
     position: relative;
   }
   &__button {
@@ -26,7 +27,7 @@
     align-items: center;
     flex-direction: column;
     padding: 7%;
-    margin: 7% 0;
+    margin: 7% auto;
     border-radius: 1em;
     opacity: 0.9;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -47,15 +48,10 @@
     }
 
     &--active {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
       height: 100%;
-      width: 100%;
+      width: 200px;
       opacity: 1;
       transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-      margin: 0;
       align-items: flex-start;
     }
     &-result{
@@ -92,21 +88,18 @@
 
   }
   &__draw{
-    width: 100px;
+    width: 80%;
     height: 0;
     overflow: hidden;
     background-color: #a1a1ff;
     border-radius: 10px;
-    box-shadow: 2px 2px 6px 2px #e5e5e5;
     transition: all 0.4s ease-in-out;
     user-select: none;
     cursor: pointer;
     
     &--open{
       height: 50px;
-      position: absolute;
-      top: 400px;
-      left: 0;
+      display: block;
     }
   }
 
