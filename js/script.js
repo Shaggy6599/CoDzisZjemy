@@ -48,9 +48,31 @@ var element = document.querySelector(".js-button");
 var imgSrc = document.querySelector(".js-img");
 var text = document.querySelector(".js-text");
 
-element && text.addEventListener('click', () => {
+element.addEventListener('click', () => {
+  if (!isOpen) {
+    element.classList.add("main-block__button--active");
+    img.classList.add("main-block__button-img--active");
+    result.classList.add("main-block__button-result--true");
+    draw.classList.add("main-block__draw--open")
+    isOpen = true;
+
+    const rand = Math.floor(Math.random() * dishes.length);
+    result.innerHTML = (dishes[rand].name);
+    imgSrc.src = (dishes[rand].img);
+
+  } else {
+    element.classList.remove("main-block__button--active");
+    img.classList.remove("main-block__button-img--active");
+    result.classList.remove("main-block__button-result--true");
+    draw.classList.remove("main-block__draw--open")
+    isOpen = false;
+
+  }
 
 
+})
+
+text.addEventListener('click', () => {
   if (!isOpen) {
     element.classList.add("main-block__button--active");
     img.classList.add("main-block__button-img--active");
@@ -76,7 +98,7 @@ element && text.addEventListener('click', () => {
 window.addEventListener('click', (e) => {
 
 
-  if (e.target !== element && e.target !== draw) {
+  if (e.target !== element && e.target !== draw && e.target !== text) {
     element.classList.remove("main-block__button--active");
     img.classList.remove("main-block__button-img--active");
     result.classList.remove("main-block__button-result--true");
