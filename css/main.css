@@ -16,10 +16,7 @@
   height: 915px;
 }
 .main-block__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-top: 50%;
   margin: auto;
   width: 80%;
   height: -moz-min-content;
@@ -32,7 +29,7 @@
   align-items: center;
   flex-direction: column;
   padding: 7%;
-  margin: 7% auto;
+  margin: 2% 0;
   border-radius: 1em;
   opacity: 0.9;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -41,27 +38,27 @@
           user-select: none;
   cursor: pointer;
 }
-.main-block__button:nth-child(1) {
-  background-color: #ffbe0b;
+
+.block-color--yellow{
+background-color: #ffbe0b;
 }
-.main-block__button:nth-child(2) {
-  background-color: #fb5607;
+.block-color--orange{
+background-color: #fb5607;
 }
-.main-block__button:nth-child(3) {
-  background-color: #ff006e;
+.block-color--pink{
+background-color: #ff006e;
 }
-.main-block__button:nth-child(4) {
-  background-color: #3a86ff;
+.block-color--blue{
+background-color: #3a86ff;
 }
 .main-block__button--active {
-  height: 100%;
-  width: 200px;
   opacity: 1;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  align-items: flex-start;
 }
 .main-block__button-result {
   display: none;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Metrophobic", sans-serif;
 }
 .main-block__button-result--true {
   display: block;
@@ -83,23 +80,25 @@
 }
 .main-block__button-img--active {
   height: 150px;
-  margin: 5% 0;
+  margin: 15% 0;
   opacity: 1;
 }
 .main-block__button:active {
-  box-shadow: inset 0 0 6px 2px #e5e5e5;
+  opacity: 0.8;
+  transition: 0.2s cubic-bezier(.5,0,1,.5);
 }
 .main-block__draw {
-  width: 80%;
-  height: 0;
-  overflow: hidden;
-  background-color: #a1a1ff;
-  border-radius: 10px;
-  transition: all 0.4s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
+  width: 50px;
+    height: 0;
+    overflow: hidden;
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 20%, rgba(0,0,0,0) 30%);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+  position: relative;
+  top: -55px;
+  right: -105px;
 }
 .main-block__draw--open {
   height: 50px;
