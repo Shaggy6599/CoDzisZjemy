@@ -1,4 +1,5 @@
-data = [
+const data = [
+  /* Test array */
   {
     type: "fruit",
     name: "orange",
@@ -85,6 +86,104 @@ data = [
     type: "fastFood",
     name: "taco",
     img: "https://t3.ftcdn.net/jpg/00/64/13/26/240_F_64132606_qtv42q6e69iiM5LHyxreXFZ3daPT1NFh.jpg",
+  },
+
+  /* nowe dania */
+
+  {
+    type: "breakfast",
+    name: "Sałatka z mozzarellą, nerkowcami i grzankami",
+    img: "https://t4.ftcdn.net/jpg/05/59/08/21/240_F_559082128_4xbYxOxb2DXz8SgGeoO8kxvdZlPNvooH.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Kanapka z Mc z jajkiem, serem, szynką i sosem ",
+    img: "https://cdn.mcdonalds.pl/uploads/20191017164040/02-04-mcmuffin-jajko.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Jajecznica z chlebem tostowym",
+    img: "https://t4.ftcdn.net/jpg/01/20/15/03/240_F_120150373_faF5LAxEjbTw6mMJZgYkpvOWUW5b3EwY.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Hot dogi",
+    img: "https://t4.ftcdn.net/jpg/02/11/50/15/240_F_211501506_JUlACnfOQh55MNbkVCh7BKMM2quuA3dJ.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Parówki z ketchupem i musztardą",
+    img: "https://t3.ftcdn.net/jpg/00/61/75/18/240_F_61751818_kqigpLxE1WTOEgEas6JrUrLyxq78NIzy.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Jajka na twardo z kanapkami",
+    img: "https://t4.ftcdn.net/jpg/02/15/94/07/240_F_215940737_HZNPF37lws9ZDgaAcqDZ3SqsyEldEQaM.jpg",
+  },
+  {
+    type: "breakfast",
+    name: 'Jajka na półtwardo z chlebem tostowym na "chrupko" z masłem',
+    img: "https://t3.ftcdn.net/jpg/04/37/24/98/240_F_437249804_5zc4zIvSmaz28yHrhZk92B5hah9f1bhw.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Tortilla z pastą jajeczną",
+    img: "https://t3.ftcdn.net/jpg/05/68/51/02/240_F_568510295_OY16Vm90tZ9P0h4lZ0huW5wnuFHufyXD.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Tortilla z jajecznicą",
+    img: "https://t3.ftcdn.net/jpg/00/97/29/08/240_F_97290877_kzTQmPt4knzEdASbVKWJGqrgtaUwYsH8.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Pizza z tortilli z serem, jajkiem, pomidorem i roszponką",
+    img: "https://t3.ftcdn.net/jpg/01/26/76/70/240_F_126767027_0DNnjJwDKAYXJP5xHJHIpu4lc2hBzYDq.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Płatki z mlekiem (miodowe)",
+    img: "https://t3.ftcdn.net/jpg/05/10/85/36/240_F_510853684_vfZIm4CriWWI8oKdKVd1UCAF0deVoA4P.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Płatki z mlekiem (czekoladowe)",
+    img: "https://t3.ftcdn.net/jpg/00/25/09/10/240_F_25091044_odCR1mvE4US4F3M39OeSd1v64nzsP9w3.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Granola w jogurcie",
+    img: "https://t3.ftcdn.net/jpg/02/63/87/56/240_F_263875631_iAdCv1GzupUXa3KFM2t8HNkX0bi6KFZs.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Jogurt i bułka",
+    img: "https://t4.ftcdn.net/jpg/00/54/20/67/240_F_54206760_c0pTc4LbD1AL7MWMHMNrFq6p7D8FvguO.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Chleb z szynką",
+    img: "https://t4.ftcdn.net/jpg/01/23/55/53/240_F_123555365_8WfqtRbRFxPqWVX1S6fZdkrbmnSfiUah.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Bułka z serem i szynką",
+    img: "https://t4.ftcdn.net/jpg/01/18/10/13/240_F_118101347_dmblgi7lltkSZxEM0td6mWgR624WESzh.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Bułka z pasztetem",
+    img: "https://t4.ftcdn.net/jpg/03/26/74/05/240_F_326740547_0BKzLJ7JPq4veelmiJBpTz2Qc0RqMEKD.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Pancake z syropem/malinami/czekoladą/jogurtem",
+    img: "https://t4.ftcdn.net/jpg/02/19/69/91/240_F_219699121_wPsqZWnExtVLbowqsJLcueqjr5pf0uZn.jpg",
+  },
+  {
+    type: "breakfast",
+    name: "Gofry z dodatkami",
+    img: "https://t3.ftcdn.net/jpg/00/54/92/28/240_F_54922829_J4CeKfCys4vwtGhCPMS3imj3rQNYRrTa.jpg",
   },
 ];
 
