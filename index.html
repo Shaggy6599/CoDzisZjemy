@@ -14,19 +14,42 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <main class="main-block">
-      <section class="main-block__wrapper">
-        <div class="js-button main-block__button">
-          <span class="main-block__button-text">Śniadanie / Kolacja</span>
-          <div class="js-button-img main-block__button-img">
-            <img class="js-img" alt="No image!"/>
-          </div>
-          <div class="js-button-result main-block__button-result"></div>
+    <div class="wrapper">
+      <div class="js-button button" data-value="1">
+        Get fruit!
+        <div class="js-button-img button-img">
+          <img class="js-img" alt="No image!" />
         </div>
-        <div class="js-draw main-block__draw">New draw</div>
-        
-      </section>
-    </main>
+        <div class="js-button-result button-result">
+          Result
+        </div>
+      </div>
+      <div class="js-button button" data-value="2">
+        Get vegetable!
+        <div class="js-button-img button-img">
+          <img class="js-img" alt="No image!" />
+        </div>
+        <div class="js-button-result button-result">
+          Result
+        </div>
+      </div>
+      <div class="js-button button" data-value="3">
+        Get fast food!
+        <div class="js-button-img button-img">
+          <img class="js-img" alt="No image!" />
+        </div>
+        <div class="js-button-result button-result">
+          Result
+        </div>
+      </div>
+    </div>
+    <div class="input-section">
+      <form class="input-section__form">
+        <label for="nff">New fast food: </label>
+        <input class="input-section__form-input" type="text" id="nff" name="FastFood">
+        <input class="input-section__form-submit" type="submit" value="Push">
+      </form>
+    </div>
     <footer class="footer">
       <span class="footer__info">Copyright © mRealizacje.net</span>
     </footer>
