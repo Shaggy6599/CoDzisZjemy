@@ -91,7 +91,8 @@ data = [
 const rand = () => {
   return Math.floor(Math.random() * newData.length);
 };
-
+var oldRand;
+var newRand;
 var buttons = document.querySelectorAll(".js-button");
 buttons.forEach((button) => {
   const img = button.querySelector(".js-button-img");
@@ -110,12 +111,13 @@ buttons.forEach((button) => {
       button.classList.add("button--active");
       img.classList.add("button-img--active");
       result.classList.add("button-result--true");
-      const newRand = rand();
-      const oldRand = newRand;
+      newRand = rand();
+      while (newRand == oldRand) {
+        newRand = rand();
+      }
       result.innerHTML = newData[newRand].name;
       imgSrc.src = newData[newRand].img;
-      console.log("New rand: " + newRand);
-      console.log("Old rand: " + oldRand);
+      oldRand = newRand;
     } else {
       button.classList.remove("button--active");
       img.classList.remove("button-img--active");
