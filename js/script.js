@@ -114,6 +114,7 @@ buttons.forEach((button) => {
       newRand = rand();
       while (newRand == oldRand) {
         newRand = rand();
+        console.info("Reloading...");
       }
       result.innerHTML = newData[newRand].name;
       imgSrc.src = newData[newRand].img;
