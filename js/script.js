@@ -87,9 +87,11 @@ data = [
     img: "https://t3.ftcdn.net/jpg/00/64/13/26/240_F_64132606_qtv42q6e69iiM5LHyxreXFZ3daPT1NFh.jpg",
   },
 ];
+
 const rand = () => {
   return Math.floor(Math.random() * newData.length);
 };
+
 var buttons = document.querySelectorAll(".js-button");
 buttons.forEach((button) => {
   const img = button.querySelector(".js-button-img");
@@ -108,9 +110,12 @@ buttons.forEach((button) => {
       button.classList.add("button--active");
       img.classList.add("button-img--active");
       result.classList.add("button-result--true");
-
-      result.innerHTML = newData[rand()].name;
-      imgSrc.src = newData[rand()].img;
+      const newRand = rand();
+      const oldRand = newRand;
+      result.innerHTML = newData[newRand].name;
+      imgSrc.src = newData[newRand].img;
+      console.log("New rand: " + newRand);
+      console.log("Old rand: " + oldRand);
     } else {
       button.classList.remove("button--active");
       img.classList.remove("button-img--active");
