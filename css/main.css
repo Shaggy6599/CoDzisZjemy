@@ -23,6 +23,15 @@ body {
   min-height: 100vh;
 }
 
+.mess {
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -32,6 +41,7 @@ body {
   width: 30vw;
   height: -moz-fit-content;
   height: fit-content;
+  margin: 0 auto;
 }
 
 .button {
