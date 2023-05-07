@@ -572,8 +572,8 @@ buttons.forEach((button) => {
     });
     if (!button.classList.contains("button--active")) {
       button.classList.add("button--active");
-      img.classList.add("button-img--active");
-      result.classList.add("button-result--true");
+      img.classList.add("button__img--active");
+      result.classList.add("button__result--true");
       newRand = rand();
       while (newRand == oldRand) {
         newRand = rand();
@@ -584,15 +584,15 @@ buttons.forEach((button) => {
       oldRand = newRand;
     } else {
       button.classList.remove("button--active");
-      img.classList.remove("button-img--active");
-      result.classList.remove("button-result--true");
+      img.classList.remove("button__img--active");
+      result.classList.remove("button__result--true");
     }
   });
   window.addEventListener("click", (e) => {
     if (e.target !== button) {
       button.classList.remove("button--active");
-      img.classList.remove("button-img--active");
-      result.classList.remove("button-result--true");
+      img.classList.remove("button__img--active");
+      result.classList.remove("button__result--true");
     }
   });
 });
