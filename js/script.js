@@ -556,6 +556,7 @@ const rand = () => {
 };
 var oldRand;
 var newRand;
+var body = document.querySelector(".js-body");
 var buttons = document.querySelectorAll(".js-button");
 buttons.forEach((button) => {
   const img = button.querySelector(".js-button-img");
@@ -574,6 +575,7 @@ buttons.forEach((button) => {
       button.classList.add("button--active");
       img.classList.add("button__img--active");
       result.classList.add("button__result--true");
+      body.classList.add("body--active");
       newRand = rand();
       while (newRand == oldRand) {
         newRand = rand();
@@ -586,6 +588,7 @@ buttons.forEach((button) => {
       button.classList.remove("button--active");
       img.classList.remove("button__img--active");
       result.classList.remove("button__result--true");
+      body.classList.remove("body--active");
     }
   });
   window.addEventListener("click", (e) => {
