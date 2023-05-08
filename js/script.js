@@ -88,7 +88,7 @@ const data = [
   },
   {
     type: "breakfast",
-    name: "Pancake z syropem/malinami/czekoladą/jogurtem",
+    name: "Pancake z syropem / malinami / czekoladą / jogurtem",
     img: "https://t4.ftcdn.net/jpg/02/19/69/91/240_F_219699121_wPsqZWnExtVLbowqsJLcueqjr5pf0uZn.jpg",
   },
   {
@@ -101,12 +101,12 @@ const data = [
 
   {
     type: "dinner",
-    name: "Kotlet z kurczaka z ziemniakami gotowanymi/pieczonymi/puree i buraczkami/ogórkiem",
+    name: "Kotlet z kurczaka z ziemniakami gotowanymi/pieczonymi/puree i buraczkami / ogórkiem",
     img: "https://t3.ftcdn.net/jpg/02/48/22/66/240_F_248226642_3fe9HsxHh2jF1hOVXLwTDLNqCbj19MS2.jpg",
   },
   {
     type: "dinner",
-    name: "Kotlet schabowy z ziemniakami gotowanymi/pieczonymi/puree i buraczkami/ogorkiem kiszonym/surowka/mizeria/sosem na ziemniaki lub na mieso",
+    name: "Kotlet schabowy z ziemniakami gotowanymi/pieczonymi/puree i buraczkami / ogorkiem kiszonym / surowka / mizeria / sosem na ziemniaki lub na mieso",
     img: "https://t3.ftcdn.net/jpg/02/48/22/66/240_F_248226642_3fe9HsxHh2jF1hOVXLwTDLNqCbj19MS2.jpg",
   },
   {
@@ -126,12 +126,12 @@ const data = [
   },
   {
     type: "dinner",
-    name: "Pierogi/mieso/owoce/ruskie",
+    name: "Pierogi / mieso / owoce / ruskie",
     img: "https://t4.ftcdn.net/jpg/02/51/79/11/240_F_251791194_n9nDUCsadhuNn1Js9ElGU8L66kvUtzsX.jpg",
   },
   {
     type: "dinner",
-    name: "Spaghetti z mielonym/szpinakiem/pieczarkami",
+    name: "Spaghetti z mielonym / szpinakiem / pieczarkami",
     img: "https://t3.ftcdn.net/jpg/05/50/36/16/240_F_550361624_tVUrJ64LPbkTCLZdEQE6z0HFSoALvENl.jpg",
   },
   {
@@ -552,7 +552,7 @@ const data = [
 ];
 
 const rand = () => {
-  return Math.floor(Math.random() * newData.length);
+  return Math.floor(rando() * newData.length);
 };
 var oldRand;
 var newRand;
