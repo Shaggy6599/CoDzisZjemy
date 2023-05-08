@@ -14,16 +14,21 @@ body {
   background-size: cover;
   position: relative;
   min-height: 100vh;
+
   //backdrop-filter: blur(1px);
 }
-.mess {
-  margin: 0 auto;
-  padding: 25px;
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: fit-content;
+
+  &__desc {
+    padding: 5%;
+  }
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -32,7 +37,6 @@ body {
   position: relative;
   width: 30vw;
   height: fit-content;
-  margin: 0 auto;
 }
 .button {
   display: flex;
