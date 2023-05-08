@@ -236,7 +236,10 @@ const data = [
   },
   {
     type: "dinner",
-    name: "Zapiekanka makaronowa lub ziemniaczana",
+    name: "Zapiekanka",
+    add: () => {
+      console.log("Hello World!");
+    },
     img: "https://t3.ftcdn.net/jpg/01/90/09/58/240_F_190095899_jvCpXT8LNfkjehptU3l7QfVWwR3hVJw5.jpg",
   },
   {
@@ -565,10 +568,20 @@ buttons.forEach((button) => {
 
   button.addEventListener("click", () => {
     newData = [];
+    newAdd = [];
     buttonData = button.getAttribute("data-value");
     data.map((el) => {
       if (el.type == buttonData) {
         newData.push(el);
+
+        /* do przemyślenia - tablica z dodatkiem do dania*/
+        if (el.add != undefined && el.add != null) {
+          //el.add();
+          //newAdd.push(el.add);
+          //console.log(newAdd);
+
+          el.add();
+        }
       }
     });
     if (!button.classList.contains("button--active")) {

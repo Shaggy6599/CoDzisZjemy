@@ -50,7 +50,7 @@
 .font--small {
   font-size: 12px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .wrapper {
@@ -142,6 +142,9 @@
   .button--active {
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .font--small {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 .footer {
