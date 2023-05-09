@@ -88,12 +88,32 @@ const data = [
   },
   {
     type: "breakfast",
-    name: "Pancake z syropem / malinami / czekoladą / jogurtem",
+    name: "Pancake z",
+    ads: ["syropem", "malinami", "czekoladą", "jogurtem"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
     img: "https://t4.ftcdn.net/jpg/02/19/69/91/240_F_219699121_wPsqZWnExtVLbowqsJLcueqjr5pf0uZn.jpg",
   },
   {
     type: "breakfast",
-    name: "Gofry z dodatkami",
+    name: "Gofry z",
+    ads: ["syropem", "malinami", "czekoladą", "jogurtem"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
     img: "https://t3.ftcdn.net/jpg/00/54/92/28/240_F_54922829_J4CeKfCys4vwtGhCPMS3imj3rQNYRrTa.jpg",
   },
 
@@ -101,37 +121,185 @@ const data = [
 
   {
     type: "dinner",
-    name: "Kotlet z kurczaka z ziemniakami gotowanymi/pieczonymi/puree i buraczkami / ogórkiem",
+    name: "Kotlet z kurczaka z ziemniakami",
+    ads: ["gotowanymi", "pieczonymi", "puree"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
+    ads2: ["buraczkami", "ogórkiem"],
+    add2: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads2.length);
+      while (newRandAdd == oldRandAdd) {
+        add2();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads2[newRandAdd];
+    },
     img: "https://t3.ftcdn.net/jpg/02/48/22/66/240_F_248226642_3fe9HsxHh2jF1hOVXLwTDLNqCbj19MS2.jpg",
   },
   {
     type: "dinner",
-    name: "Kotlet schabowy z ziemniakami gotowanymi/pieczonymi/puree i buraczkami / ogorkiem kiszonym / surowka / mizeria / sosem na ziemniaki lub na mieso",
+    name: "Kotlet schabowy z ziemiakami",
+    ads: ["gotowanymi", "pieczonymi", "puree"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
+    ads2: [
+      "buraczkami",
+      "ogórkiem kiszonym",
+      "surówką",
+      "mizerią",
+      "sosem na ziemniaki",
+      "sosem na mięso",
+    ],
+    add2: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads2.length);
+      while (newRandAdd == oldRandAdd) {
+        add2();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads2[newRandAdd];
+    },
     img: "https://t3.ftcdn.net/jpg/02/48/22/66/240_F_248226642_3fe9HsxHh2jF1hOVXLwTDLNqCbj19MS2.jpg",
   },
   {
     type: "dinner",
-    name: "Klopsy mielone z ziemniakami i dodatkami",
+    name: "Klopsy mielone z ziemniakami",
+    ads: ["gotowanymi", "pieczonymi", "puree"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
+    ads2: [
+      "buraczkami",
+      "ogórkiem kiszonym",
+      "surówką",
+      "mizerią",
+      "sosem na ziemniaki",
+      "sosem na mięso",
+    ],
+    add2: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads2.length);
+      while (newRandAdd == oldRandAdd) {
+        add2();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads2[newRandAdd];
+    },
     img: "https://t4.ftcdn.net/jpg/00/21/77/77/240_F_21777749_lmTv1ZGuRRPNOKjCaVQJTX2zCpR2XwJ8.jpg",
   },
   {
     type: "dinner",
-    name: "Kotlet devolay z ziemniakami i dodatkami ",
+    name: "Kotlet devolay z ziemniakami",
+    ads: ["gotowanymi", "pieczonymi", "puree"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
+    ads2: [
+      "buraczkami",
+      "ogórkiem kiszonym",
+      "surówką",
+      "mizerią",
+      "sosem na ziemniaki",
+      "sosem na mięso",
+    ],
+    add2: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads2.length);
+      while (newRandAdd == oldRandAdd) {
+        add2();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads2[newRandAdd];
+    },
     img: "https://t3.ftcdn.net/jpg/05/00/16/74/240_F_500167497_YyyIGkWygk4MJ3nW2Cp77sEXWvqtVNAN.jpg",
   },
   {
     type: "dinner",
     name: "Cordon bleu z ziemniakami",
+    ads: ["gotowanymi", "pieczonymi", "puree"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
+    ads2: [
+      "buraczkami",
+      "ogórkiem kiszonym",
+      "surówką",
+      "mizerią",
+      "sosem na ziemniaki",
+      "sosem na mięso",
+    ],
+    add2: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads2.length);
+      while (newRandAdd == oldRandAdd) {
+        add2();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads2[newRandAdd];
+    },
     img: "https://t4.ftcdn.net/jpg/04/69/27/37/240_F_469273746_2ZAu3LACBwOuIwVZQDKl7RvNHXIRKJvw.jpg",
   },
   {
     type: "dinner",
-    name: "Pierogi / mieso / owoce / ruskie",
+    name: "Pierogi",
+    ads: ["z mięsem", "z owocami", "ruskie"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
     img: "https://t4.ftcdn.net/jpg/02/51/79/11/240_F_251791194_n9nDUCsadhuNn1Js9ElGU8L66kvUtzsX.jpg",
   },
   {
     type: "dinner",
-    name: "Spaghetti z mielonym / szpinakiem / pieczarkami",
+    name: "Spaghetti z",
+    ads: ["mielonym", "szpinakiem", "pieczarkami"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
+    },
     img: "https://t3.ftcdn.net/jpg/05/50/36/16/240_F_550361624_tVUrJ64LPbkTCLZdEQE6z0HFSoALvENl.jpg",
   },
   {
@@ -237,8 +405,15 @@ const data = [
   {
     type: "dinner",
     name: "Zapiekanka",
-    add: () => {
-      console.log("Hello World!");
+    ads: ["makaronowa", "ziemniaczana"],
+    add: function () {
+      var oldRandAdd;
+      newRandAdd = Math.floor(rando() * this.ads.length);
+      while (newRandAdd == oldRandAdd) {
+        add();
+      }
+      oldRandAdd = newRandAdd;
+      return this.ads[newRandAdd];
     },
     img: "https://t3.ftcdn.net/jpg/01/90/09/58/240_F_190095899_jvCpXT8LNfkjehptU3l7QfVWwR3hVJw5.jpg",
   },
@@ -573,15 +748,6 @@ buttons.forEach((button) => {
     data.map((el) => {
       if (el.type == buttonData) {
         newData.push(el);
-
-        /* do przemyślenia - tablica z dodatkiem do dania*/
-        if (el.add != undefined && el.add != null) {
-          //el.add();
-          //newAdd.push(el.add);
-          //console.log(newAdd);
-
-          el.add();
-        }
       }
     });
     if (!button.classList.contains("button--active")) {
@@ -596,6 +762,14 @@ buttons.forEach((button) => {
       }
       result.innerHTML = newData[newRand].name;
       imgSrc.src = newData[newRand].img;
+      if (newData[newRand].add != undefined && newData[newRand].add != null) {
+        result.innerHTML += " ";
+        result.innerHTML += newData[newRand].add();
+      }
+      if (newData[newRand].add2 != undefined && newData[newRand].add2 != null) {
+        result.innerHTML += " i ";
+        result.innerHTML += newData[newRand].add2();
+      }
       oldRand = newRand;
     } else {
       button.classList.remove("button--active");
