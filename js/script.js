@@ -756,7 +756,11 @@ buttons.forEach((button) => {
       result.classList.add("button__result--true");
       body.classList.add("body--active");
       newRand = rand();
-      while (newRand == oldRand || newData[newRand].name == false) {
+      while (
+        newRand == oldRand ||
+        newData[newRand].name == false ||
+        newData[newRand].img == false
+      ) {
         newRand = rand();
         console.info("Reloading...");
       }
