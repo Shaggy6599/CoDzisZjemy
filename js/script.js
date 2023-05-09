@@ -756,7 +756,11 @@ buttons.forEach((button) => {
       result.classList.add("button__result--true");
       body.classList.add("body--active");
       newRand = rand();
-      while (newRand == oldRand) {
+      while (
+        newRand == oldRand ||
+        newData[newRand].name == false ||
+        newData[newRand].img == false
+      ) {
         newRand = rand();
         console.info("Reloading...");
       }
@@ -783,6 +787,7 @@ buttons.forEach((button) => {
       button.classList.remove("button--active");
       img.classList.remove("button__img--active");
       result.classList.remove("button__result--true");
+      //body.classList.remove("body--active");
     }
   });
 });
