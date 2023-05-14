@@ -607,6 +607,7 @@ const data = [
   },
 
   /* -------------------------------------------    Fast Food    ------------------------------------------------ */
+
   {
     type: "fastFood",
     name: "McDonald's",
@@ -640,7 +641,7 @@ const data = [
   {
     type: "fastFood",
     name: "Manekin",
-    img: "https://manekin.pl/public/img/logo.png",
+    img: "https://t4.ftcdn.net/jpg/01/86/97/87/240_F_186978773_YLJ0RTtEtUrMpcmHJC13uf8CP1EhVqwt.jpg",
   },
   {
     type: "fastFood",
@@ -695,12 +696,12 @@ const data = [
   {
     type: "fastFood",
     name: "Kupony MC",
-    img: "https://cdn.mcdonalds.pl/uploads/20230508113620/foto-www-desktop-2500x1080-08-05.jpg",
+    img: "https://cdn.mcdonalds.pl/uploads/20211124151714/348406-packshoty-na-www-540x450px-custom-h-4.jpg",
   },
   {
     type: "fastFood",
     name: "Kupony KFC",
-    img: "https://amrestcdn.azureedge.net/kfc-web-ordering/PL/LP/Kurpony/Logo-Kurpony.svg",
+    img: "https://sawepecomcdn.blob.core.windows.net/kfc-web-ordering/KFC/Rok2023grafika/Kupony2023/C_4Twis4Zin4Fry_240.png",
   },
   {
     type: "fastFood",
@@ -720,7 +721,7 @@ const data = [
   {
     type: "fastFood",
     name: "Pizza Biskupinek lub inne jedzenie od nich",
-    img: "https://www.jadlobiskupinek.pl/_cache/foto/950/357/scaled/2014/2/20/L2hvbWUvYnJvd2luc2svd3d3L2phZGxvYmlza3VwaW5lay5wbC9wdWJsaWMvc2hhcmVkL2RhdGEvdXBsb2Fkcy9iYW5uZXJz/0bdbca8d4d2d4faf9af9bb72249e2206-57f5_baner.jpg",
+    img: "http://www.jadlobiskupinek.pl/shared/data/uploads/elfinder/menu%20restauracji%20OK/1.jpg",
   },
   {
     type: "fastFood",
