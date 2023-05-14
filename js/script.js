@@ -610,7 +610,7 @@ const data = [
   {
     type: "fastFood",
     name: "McDonald's",
-    img: "https://t4.ftcdn.net/jpg/05/92/54/59/240_F_592545968_dv77MQsF0H8uDIKAs3Pac09nsEt3WWeE.jpg",
+    img: "https://cdn.mcdonalds.pl/public/build/images/header/logo3.19d7d61fd29210afe458d0de4d0a7ca6.svg",
   },
   {
     type: "fastFood",
@@ -620,7 +620,7 @@ const data = [
   {
     type: "fastFood",
     name: "Burger King",
-    img: "https://t4.ftcdn.net/jpg/02/67/31/75/240_F_267317518_C1r0JD0vllzshSSXzx108r4DlSokhVpk.jpg",
+    img: "https://amrestcdn.azureedge.net/bk-web-ordering/BK%20PL/bk_images/zestawy_pepsi_max/bigking_zestaw.png",
   },
   {
     type: "fastFood",
@@ -640,7 +640,7 @@ const data = [
   {
     type: "fastFood",
     name: "Manekin",
-    img: "https://t4.ftcdn.net/jpg/02/55/82/39/240_F_255823924_olzFTKLNiNhOFr9lsBMzZnSXocab85fn.jpg",
+    img: "https://manekin.pl/public/img/logo.png",
   },
   {
     type: "fastFood",
@@ -650,82 +650,82 @@ const data = [
   {
     type: "fastFood",
     name: "Hot dog Orlen",
-    img: "https://t3.ftcdn.net/jpg/02/75/59/18/240_F_275591867_BTK0BoG0lBQLjfh6mxDXrfRNVF7bqKJr.jpg",
+    img: "https://stopcafe.pl/wp-content/uploads/2022/01/hd-768x768.png",
   },
   {
     type: "fastFood",
     name: "Shake Burger King",
-    img: "https://t3.ftcdn.net/jpg/05/51/88/38/240_F_551883880_9QOSUuGop0RUTVFYkJSdpvjP6O9lqr89.jpg",
+    img: "https://sawepecomcdn.blob.core.windows.net/bk-web-ordering/BK%20PL/bk_images/desery/kitkat_shake_caramel_300ml.png",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Wieśmak",
+    img: "https://cdn.mcdonalds.pl/uploads/20220922161256/wies-mac.jpg",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Chicker",
+    img: "https://cdn.mcdonalds.pl/uploads/20220922162018/347053-aktualizacja-packshotow-na-www-540x450px-custom-h-1.jpg",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Nuggetsy",
+    img: "https://cdn.mcdonalds.pl/uploads/20210609095420/347406-supreme-crispy-chicken-strips-i-chicken-box-na-www-540x450px-custom-h-3.jpg",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Twister",
+    img: "https://amrestcdn.azureedge.net/kfc-web-ordering/KFC/Images/ALL/twisters/regular/Twister_240.png",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Longer",
+    img: "https://amrestcdn.azureedge.net/kfc-web-ordering/KFC/Images/Web/new/longer.png",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Frytki",
+    img: "https://t3.ftcdn.net/jpg/00/45/80/66/240_F_45806601_sRHcUCySuIVRKZB8UIRPAU3w9DJHZSSH.jpg",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Kupony BK",
+    img: "https://amrestcdn.azureedge.net/bk-web-ordering/BK%20PL/bk_images/zestawy/mNuggetburger_kz5.png",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Kupony MC",
+    img: "https://cdn.mcdonalds.pl/uploads/20230508113620/foto-www-desktop-2500x1080-08-05.jpg",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Kupony KFC",
+    img: "https://amrestcdn.azureedge.net/kfc-web-ordering/PL/LP/Kurpony/Logo-Kurpony.svg",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Burger orlen",
+    img: "https://stopcafe.pl/wp-content/uploads/2023/04/g2-768x768.png",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Pizza Dominos",
+    img: "https://www.dominospizza.pl/DominosPizza/media/Images/products/pizza/desktop/792x792-carbonara_2.webp?width=435",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Domowe burgery",
+    img: "https://t4.ftcdn.net/jpg/02/24/41/41/240_F_224414112_ExzKqlvajdgRqLbwxD6TEveFCkLXgrtl.jpg",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "Pizza Biskupinek lub inne jedzenie od nich",
+    img: "https://www.jadlobiskupinek.pl/_cache/foto/950/357/scaled/2014/2/20/L2hvbWUvYnJvd2luc2svd3d3L2phZGxvYmlza3VwaW5lay5wbC9wdWJsaWMvc2hhcmVkL2RhdGEvdXBsb2Fkcy9iYW5uZXJz/0bdbca8d4d2d4faf9af9bb72249e2206-57f5_baner.jpg",
   },
   {
     type: "fastFood",
-    name: "",
-    img: "",
+    name: "McRoyal",
+    img: "https://cdn.mcdonalds.pl/uploads/20220922160447/mcroyal2.jpg",
   },
 ];
 
