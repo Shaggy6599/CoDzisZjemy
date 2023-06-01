@@ -3,6 +3,11 @@ const data = [
 
   {
     type: "breakfast",
+    name: "Kanapka z pomidorem, cebulką, twarożkiem i sosem winegret",
+    img: "https://zkurnejpolki.pl/pro_kurnapolka/zasoby/przepisy_zdjecie_glowne/xkanapka-z-pomidorem.jpg.pagespeed.ic.rsdYIizTJD.jpg",
+  },
+  {
+    type: "breakfast",
     name: "Sałatka z mozzarellą, nerkowcami i grzankami",
     img: "https://t4.ftcdn.net/jpg/05/59/08/21/240_F_559082128_4xbYxOxb2DXz8SgGeoO8kxvdZlPNvooH.jpg",
   },
